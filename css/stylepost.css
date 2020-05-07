@@ -1,0 +1,157 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 400px 1000px 70px 50px;
+    grid-template-areas:  
+    "hd"
+    "in"
+    "po"
+    "so"
+    "ft";
+}
+.header{
+    grid-area: hd;
+    background-color: rgb(68, 68, 197);
+    display: inline;
+}
+#heading{
+color: wheat;
+margin: 10px;
+}
+button{
+    position: absolute;
+    background-color:wheat;
+    color: crimson;
+    position: relative;
+    margin-left: 1100px;
+    bottom: 42px;
+    }
+.intro{
+    grid-area: in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#pic{
+background-color: white;
+width: 30%;
+padding: 20px;
+}
+img{
+    border-radius: 70%;
+}
+#bio{
+width: 50%;
+}
+.posts{
+    grid-area: po;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#post-1{
+    background-color: springgreen;
+    border-style: solid;
+    border-color: #AAAAAA;
+    border-width: 5px;
+    width:  80%;
+    height: 500px;
+    text-align: center;
+}
+#post-2{
+    background-color: springgreen;
+    border-style: solid;
+    border-color: #AAAAAA;
+    border-width: 5px;
+    width: 80%;
+    height: 500px;
+    text-align: center; 
+}
+#post-3{
+    background-color: springgreen;
+    border-style: solid;
+    border-color: #AAAAAA;
+    border-width: 5px;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+}
+.social{
+    grid-area: so;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.footer{
+    grid-area: ft;
+    background-color: rgb(68, 68, 197);
+    text-align: center;
+}
+@media (max-width:1000px){
+ 
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 500px 1fr 70px 50px;
+        grid-template-areas:  
+        "hd"
+        "in"
+        "po"
+        "so"
+        "ft";
+    }
+    button{
+        position: relative;
+        background-color:wheat;
+        color: crimson;
+        margin-left: 330px;
+        bottom: 47px;
+        right: 20px;
+      }
+    .intro{
+        grid-area: in;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #post-1{
+        background-color: springgreen;
+        border-style: solid;
+        border-color: #AAAAAA;
+        border-width: 5px;
+        width:  80%;
+        height: 1300px;
+        text-align: center;
+    }
+    #post-2{
+        background-color: springgreen;
+        border-style: solid;
+        border-color: #AAAAAA;
+        border-width: 5px;
+        width: 80%;
+        height: 900px;
+        text-align: center; 
+    }
+    #post-3{
+        background-color: springgreen;
+        border-style: solid;
+        border-color: #AAAAAA;
+        border-width: 5px;
+        width: 80%;
+        height: 1200px;
+        text-align: center;
+    }
+    #pic{
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        }
+        #bio{
+        width: 70%;
+        }
+}

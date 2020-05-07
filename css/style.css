@@ -1,0 +1,109 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+display: grid;
+grid-template-columns:1fr ;
+grid-template-rows: 50px 870px 1fr 50px;
+grid-template-areas:
+"hb hb hb hb hb hb hb hb"
+"we we we we we we we we"
+"cn cn cn cn cn cn cn cn"
+"ft ft ft ft ft ft ft ft";
+border: 2px rgb(226, 7, 7);
+}
+.box{
+border: 1px solid yellow;
+
+}
+.header-box{
+  grid-area: hb;
+  background-color: rgb(68, 68, 197) 
+}
+.menu{
+  align-self:start;
+  margin-left: 1000px;
+  margin-bottom: 20px;
+}
+button{
+  position: relative;
+  bottom: 37px;
+  background-color:wheat;
+  color: crimson;
+}
+.welcome-box{
+  grid-area: we;
+  padding: 10px;
+}
+
+.content{
+  display:flex;
+  flex-direction: row;
+  border: solid yellow;
+  }
+  
+.content-box{
+  grid-area: cn;
+}
+.posts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: springgreen;
+}
+#topic{
+  width: 250px;
+  height: 500px;
+  column-gap: 20px;
+  background-color: springgreen;
+  text-align: center;
+  padding: 20px;
+  top: 10%;
+  border-style: solid;
+  border-color: #AAAAAA;
+  border-width: 5px;
+}
+
+#one{
+  order: 1; 
+}
+#two{
+  order:2;
+}
+#three{
+  order:3;
+  
+}
+.view-more{
+  color: black;
+  padding:25px 25px;
+  text-decoration: none;
+  padding: 10px;
+}
+.view-more:hover,.view-more:active{
+  color:red;
+}
+
+.footer-box{
+  grid-area: ft;
+  background-color:rgb(68, 68, 197);
+  color: blanchedalmond;
+  text-align: center;
+  padding-top: 16px;
+}
+
+@media (max-width: 1000px){
+
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: springgreen;
+}
+.menu{
+  align-self:start;
+  margin-left: 700px;
+}
+}
